@@ -1,0 +1,286 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    background-color: none;
+}
+
+/* Apply styles to the header */
+header {
+    color: #fff; /* Text color for the header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.main-page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1;
+}
+
+.main-page-header nav ul {
+    background: transparent;
+}
+
+.main-page-header nav ul li {
+    background: transparent;
+}
+
+/* Style the company logo */
+.logo img {
+    max-height: 50px; /* Adjust the size as needed */
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline; /* Display menu items horizontally */
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for menu items */
+    font-weight: 300;
+}
+
+/* Style the main content area (adjust as needed) */
+.main-content {
+    padding: 50px;
+}
+
+/* Style the main content area (adjust as needed) */
+.main-content-main {
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start;
+}
+
+.main-content img {
+    width: 100%;
+    max-width: 100%; /* Ensures the image doesn't exceed the parent container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add an overlay with reduced opacity to dim the image */
+.image-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the overlay */
+    pointer-events: none; /* Allows interaction with content behind the overlay */
+}
+
+.cta-container {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align content to the top */
+    z-index: 1;
+}
+
+.cta-section {
+    text-align: left; /* Align the text within the CTA section to the left */
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.cta-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: none;
+    border: 1px solid #F13333;
+    color: #F13333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.active {
+    color: #F13333;
+    font-weight: bold;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 110px;
+}
+
+/* Style individual service sections */
+.service {
+    width: 25%; /* Adjust the width as needed */
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content vertically within each service section */
+}
+
+.service .service-icon {
+    margin-bottom: 10px;
+}
+
+.service h2 {
+    font-size: 1.8rem;
+}
+
+.service p {
+    font-size: 1.2rem;
+}
+
+.service-icon {
+    width: 200pt;
+    height: auto;
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: 50pt;
+}
+
+.services-cta p {
+    margin-bottom: 20pt;
+}
+
+.service h2 {
+    margin-bottom: 10pt;
+}
+
+.contact-form {
+    text-align: center;
+    margin-top: 20pt;
+}
+
+.contact-form form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #F13333;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 5pt;
+}
+
+.form-group textarea {
+    height: 120px;
+    background-color: transparent;
+}
+
+.contact-form .cta-button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.employee-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Style individual employee cards */
+.employee {
+    width: 30%; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px;
+}
+
+/* Style employee images within circular frames */
+.employee-image {
+    width: 200px; /* Adjust the size of the circular frame */
+    height: 200px; /* Maintain a square aspect ratio */
+    border-radius: 50%; /* Create a circular frame */
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+.employee-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the circular frame */
+}
+
+.employee h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.employee p {
+    font-size: 1rem;
+}
+
+.top-employee {
+    margin-bottom: 50px; /* Add margin between the first 3 employees and the rest */
+}
+
