@@ -287,6 +287,10 @@ nav a {
 @media (max-width: 768px) {
     /* Apply mobile-specific styles within this media query */
 
+    .main-content {
+        padding: 10px 20px;
+    }
+
     /* Update header padding for mobile */
     header {
         padding: 10px 20px;
@@ -360,14 +364,32 @@ nav a {
 
     .services-container {
         display: block;
-        padding: 10px;
+        padding: 0;
         text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .services-container h2 {
+        font-size: 18px;
+    }
+
+    .services-container p {
+        font-size: 16px;
+    }
+
+    .services-cta {
+        margin-bottom: 30px;
     }
 
     /* Adjust the width of service sections for better mobile display */
     .service {
         width: 100%;
         margin: 10px 0; /* Add margin between services */
+        padding: 0;
     }
 
     .employee-section {
@@ -402,6 +424,10 @@ nav a {
     
     .employee p {
         font-size: 1rem;
+    }
+
+    .form-group input, .form-group textarea {
+        width: 90%;
     }
 }
 
