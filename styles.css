@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body {
     margin: 0;
     padding: 0;
@@ -18,9 +17,8 @@ p {
     background-color: none;
 }
 
-/* Apply styles to the header */
 header {
-    color: #fff; /* Text color for the header */
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,44 +46,40 @@ header {
     background: transparent;
 }
 
-/* Style the company logo */
 .logo img {
-    max-height: 30px; /* Adjust the size for mobile */
+    max-height: 30px; 
 }
 
-/* Style the navigation menu */
 nav ul {
     list-style-type: none;
 }
 
 nav li {
-    display: inline; /* Display menu items horizontally */
-    margin-right: 20px; /* Add spacing between menu items */
+    display: inline;
+    margin-right: 20px; 
 }
 
 nav a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #fff; /* Text color for menu items */
+    text-decoration: none; 
+    color: #fff; 
     font-weight: 300;
 }
 
-/* Style the main content area (adjust as needed) */
 .main-content {
     padding: 50px;
 }
 
-/* Style the main content area (adjust as needed) */
 .main-content-main {
     padding: 50px;
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: flex-start;
     align-items: flex-start;
 }
 
 .main-content img {
     width: 100%;
-    max-width: 100%; /* Ensures the image doesn't exceed the parent container */
-    height: auto; /* Maintains the aspect ratio */
+    max-width: 100%;
+    height: auto; 
 }
 
 .image-overlay {
@@ -98,7 +92,6 @@ nav a {
     height: auto;
 }
 
-/* Add an overlay with reduced opacity to dim the image */
 .image-overlay::before {
     content: '';
     position: absolute;
@@ -106,19 +99,19 @@ nav a {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the overlay */
-    pointer-events: none; /* Allows interaction with content behind the overlay */
+    background: rgba(0, 0, 0, 0.5); 
+    pointer-events: none; 
 }
 
 .cta-container {
     display: flex;
-    justify-content: flex-start; /* Align content to the left */
-    align-items: flex-start; /* Align content to the top */
+    justify-content: flex-start; 
+    align-items: flex-start; 
     z-index: 1;
 }
 
 .cta-section {
-    text-align: left; /* Align the text within the CTA section to the left */
+    text-align: left;
     color: #fff;
     position: absolute;
     top: 40%;
@@ -159,15 +152,14 @@ nav a {
     padding: 0px 110px;
 }
 
-/* Style individual service sections */
 .service {
-    width: 25%; /* Adjust the width as needed */
+    width: 25%;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content vertically within each service section */
+    align-items: center;
 }
 
 .service .service-icon {
@@ -249,18 +241,16 @@ nav a {
     margin: 0 auto;
 }
 
-/* Style individual employee cards */
 .employee {
-    width: 30%; /* Adjust the width as needed */
+    width: 30%; 
     text-align: center;
     margin: 10px;
 }
 
-/* Style employee images within circular frames */
 .employee-image {
-    width: 200px; /* Adjust the size of the circular frame */
-    height: 200px; /* Maintain a square aspect ratio */
-    border-radius: 50%; /* Create a circular frame */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 10px;
 }
@@ -268,7 +258,7 @@ nav a {
 .employee-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image fills the circular frame */
+    object-fit: cover;
 }
 
 .employee h3 {
@@ -281,17 +271,14 @@ nav a {
 }
 
 .top-employee {
-    margin-bottom: 50px; /* Add margin between the first 3 employees and the rest */
+    margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-    /* Apply mobile-specific styles within this media query */
-
     .main-content {
         padding: 10px 20px;
     }
 
-    /* Update header padding for mobile */
     header {
         padding: 10px 20px;
     }
@@ -301,33 +288,29 @@ nav a {
     }
 
     .main-content-main .image-overlay img {
-        width: 300%; /* Increase the image width */
-        max-width: none; /* Remove max-width restriction */
-        transform: translateX(-30%); /* Shift the image to the left to show the right part */
+        width: 300%; 
+        max-width: none; 
+        transform: translateX(-30%);
     }
 
     .image-overlay::before {
-        background: rgba(0, 0, 0, 0.8); /* You can adjust the alpha value for a darker or lighter effect */
+        background: rgba(0, 0, 0, 0.8);
     }
 
-    /* Adjust logo size for smaller screens */
     .logo img {
         max-height: 20px;
     }
 
-    /* Remove margin-top for smaller screens */
     nav ul {
         margin-top: 0;
         text-align: right;
     }
 
-    /* Adjust menu item spacing for smaller screens */
     nav li {
         margin-right: 10px;
         font-size: 12px;
     }
 
-    /* Adjust font size and margin for mobile */
     .cta-section h1 {
         font-size: 2rem;
         margin-bottom: 10px;
@@ -337,26 +320,23 @@ nav a {
         font-size: 1rem;
     }
 
-    /* Adjust font size and margin for mobile */
     .cta-section {
-        position: absolute; /* Reset position */
-        top: 20%; /* Reset top position */
-        left: 5%; /* Reset left position */
-        transform: none; /* Reset transform */
-        margin-top: 20px; /* Add margin to separate from the image */
+        position: absolute; 
+        top: 20%; 
+        left: 5%;
+        transform: none; 
+        margin-top: 20px; 
         padding: 20px;
     }
 
-    /* Adjust button padding and font size for smaller screens */
     .cta-button {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
-    
-    /* Update CTA container positioning for mobile */
+
     .cta-container {
         position: static;
-        background: rgba(0, 0, 0, 0.8); /* Add background to the content overlay */
+        background: rgba(0, 0, 0, 0.8);
         padding: 20px;
         border-radius: 10px;
         text-align: center;
@@ -385,10 +365,9 @@ nav a {
         margin-bottom: 30px;
     }
 
-    /* Adjust the width of service sections for better mobile display */
     .service {
         width: 100%;
-        margin: 10px 0; /* Add margin between services */
+        margin: 10px 0; 
         padding: 0;
     }
 
@@ -396,7 +375,6 @@ nav a {
         display: block;
     }
 
-    /* Center align the entire employee section, including text */
     .employee {
         text-align: center;
         display: flex;
@@ -406,18 +384,15 @@ nav a {
         margin: 0;
     }
 
-    /* Center align the employee image within its container */
     .employee-image {
         display: flex;
         justify-content: center;
     }
-    
-    /* Add spacing between employees for better mobile display */
+
     .employee {
         margin-bottom: 20px;
     }
     
-    /* Adjust font size for better mobile readability */
     .employee h3 {
         font-size: 1.5rem;
     }
